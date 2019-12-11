@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/denglu.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header">
+        <img src="../img/logo.png" alt="">
+        <span>欢迎登录</span>
+    </div>
+    <!-- 主体 -->
+    <div id="main">
+        <div class="pic">
+            <img src="../img/059b6d969c8cb7812d2003438acc0c8d.png" alt="">
+        </div>
+        <!-- 登录 -->
+        <div class="login">
+            <div class="header">
+                <span>登录</span>
+                <a href="zhuce.html">立即注册
+                    <i></i>
+                </a>
+            </div>
+            <div class="box">
+                <ul class="ul">
+                    <li>
+                        <div>
+                            <em></em>优选账号
+                        </div>
+                    </li>
+                </ul>
+                <div class="content">
+                    <ul class="ula" id="ula">
+                        <li>
+                            <div class="errorbox">
+                                <div class="error">
+                                    <span class="span1"></span>
+                                    <span class="span2"></span>
+                                </div>
+                            </div>
+                            <div class="phone" style="margin-top:30px">
+                                <div class="phoneicon">
+                                    <div class="icon"></div>
+                                </div>
+                                <div class="phoneipt">
+                                    <input type="text" title="请输入手机号码" maxlength="11" placeholder="手机号">
+                                    <em></em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="loginCode">
+                                <div class="code-icon">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="code-ipt">
+                                    <input type="text" placeholder="短信验证码" maxlength="6">
+                                    <img src="../img/icon4.jpg" alt="" class="zimg">
+                                    <div class="e"></div>
+                                </div>
+                                <em>获取验证码</em>
+                                <a href="javascript:;" class="huo">获取验证码</a>
+                                <!-- 发送验证码 -->
+                                <a href="javascript:;" class="send"><i id="sec"></i>s后重发</a>
+                                <!-- 验证码已发送 -->
+                                <span class="over">密码</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="xieyi">
+                                <span><i></i>同意<a href="javascript:;">《顺丰优选用户协议》</a>,首次登录即默认注册</span>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn">登录</button>
+                        </li>
+                        <li>
+                            <div class="change" id="change1">
+                                <a href="javascript:;">账号密码登录 > </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- 账号密码登录 -->
+                    <ul class="ula" id="ulb" style="display:none">
+                        <li>
+                            <div class="errorbox">
+                                <div class="error">
+                                    <span class="span1"></span>
+                                    <span class="span2"></span>
+                                </div>
+                            </div>
+                            <div class="phone" style="margin-top:30px">
+                                <div class="phoneicon">
+                                    <div class="icon"></div>
+                                </div>
+                                <div class="phoneipt">
+                                    <input type="text" title="请输入手机号/邮箱/用户名" maxlength="11" placeholder="请输入手机号/邮箱/用户名">
+                                    <em></em>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="margin-top:14px">
+                            <div class="phone">
+                                <div class="phoneicon">
+                                    <div class="icon" style="background:url(../img/login-icon7.png);"></div>
+                                </div>
+                                <div class="phoneipt">
+                                    <input type="text" title="请输入密码" maxlength="11" placeholder="请输入密码">
+                                    <em></em>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="loginCode">
+                                <div class="code-icon">
+                                    <span class="icon"style="background:url(../img/login-icon20.png);"></span>
+                                </div>
+                                <div class="code-ipt">
+                                    <input type="text" placeholder="请输入验证码" maxlength="6">
+                                    <img src="../img/icon4.jpg" alt="" class="zimg">
+                                    <div class="e"></div>
+                                </div>
+                                <em>获取验证码</em>
+                                <a href="javascript:;" class="huo"><img src="../img/6.png" alt="" style="width:90px; height:36px;margin-left:-4px;margin-top:-6px;"></a>
+                                <!-- 发送验证码 -->
+                                <a href="javascript:;" class="send"><i id="sec"></i>s后重发</a>
+                                <!-- 验证码已发送 -->
+                                <span class="over">密码</span>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn" style="margin-top:45px">登录</button>
+                        </li>
+                        <li>
+                            <div class="change" id="change2">
+                                <a href="javascript:;">手机验证登录 > </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="link">
+                    <li class="li1">
+                        <div>
+                            <span class="s1">
+                                <i></i>
+                            </span>
+                            <a href="javascript:;"><span>QQ</span></a>
+                        </div>
+                    </li>
+                    <li class="li2">
+                        <div>
+                            <span class="s2">
+                                <i></i>
+                            </span>
+                            <a href="javascript:;"><span>微博</span></a>
+                        </div>
+                    </li>
+                    <li class="li3">
+                        <div>
+                            <span class="s3">
+                                <i></i>
+                            </span>
+                            <a href="javascript:;"><span>微信</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div id="footer">
+        <span>
+            <a href="javascript:;">
+                关于我们
+            </a>
+            |
+
+            <a href="javascript:;">
+                联系我们
+            </a>
+            |
+
+            <a href="javascript:;">
+                招聘人才
+            </a>
+            |
+
+            <a href="javascript:;">
+                友情链接
+            </a>
+            |
+
+        </span>
+        <p>
+
+            北京顺丰电子商务有限公司
+            <br>
+
+            北京市公安局顺义分局备案11011302000890号|
+            <a href="javascript:;">京ICP备12011349号</a>|<a href="javascript:;">企业营业执照</a><br>
+
+            Copyright© 顺丰优选 sfbest.com 版权所有<br>
+        </p>
+    </div>
+</body>
+<script src="../lib/jquery-3.4.1.js"></script>
+<script src="../js/denglu.js"></script>
+
+</html>

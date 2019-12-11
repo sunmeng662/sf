@@ -1,0 +1,553 @@
+@charset "UTF-8";
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, th, td, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+body, div, td {
+  font-size: 12px;
+  font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+
+html {
+  color: #515151;
+}
+
+a {
+  text-decoration: none;
+  color: #515151;
+}
+
+input {
+  outline: none;
+}
+
+ul, li {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+li {
+  text-align: -webkit-match-parent;
+}
+
+#header {
+  margin: 0 auto;
+  width: 1000px;
+}
+#header img {
+  margin: 10px 0;
+  float: left;
+}
+#header span {
+  line-height: 70px;
+  font-size: 18px;
+  padding-left: 3px;
+  font-family: "微软雅黑";
+  margin: 10px 0;
+  float: left;
+}
+
+#main {
+  width: 1000px;
+  height: auto !important;
+  min-height: 500px;
+  background: #fff;
+  margin: 0 auto;
+  clear: both;
+}
+#main .pic {
+  padding-top: 47px;
+  width: 540px;
+  height: 390px;
+  float: left;
+}
+#main .pic img {
+  margin-top: 32px;
+  border: none;
+  cursor: pointer;
+}
+#main .login {
+  width: 400px;
+  min-height: 100px;
+  float: left;
+}
+#main .login .header {
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+}
+#main .login .header span {
+  color: #000;
+  font-size: 20px;
+  float: left;
+  position: relative;
+  top: 14px;
+  left: 0;
+  height: 26px;
+  line-height: 26px;
+}
+#main .login .header a {
+  float: right;
+  font-size: 14px;
+  color: #666;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 12px;
+  border-radius: 3px;
+}
+#main .login .header a i {
+  position: relative;
+  top: 4px;
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  background: url(../img/login-icon28.png) no-repeat;
+}
+#main .login .box {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0px;
+  border: 1px solid #ededed;
+  height: auto !important;
+  min-height: 150px;
+  clear: both;
+  line-height: 0;
+}
+#main .login .box .ul {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+#main .login .box .ul li {
+  border-right: medium none;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  border-top: 2px solid #69af05;
+  position: relative;
+  margin-top: -2px;
+  float: left;
+  font-size: 14px;
+  line-height: 38px;
+  cursor: pointer;
+  text-align: -webkit-match-parent;
+  color: #666;
+}
+#main .login .box .ul li div {
+  border-right: 1px solid #ededed;
+  line-height: 38px;
+}
+#main .login .box .ul li div em {
+  float: left;
+  margin: 10px 5px 0 24px;
+  background: url(../img/loginicon.png) no-repeat;
+  width: 15px;
+  height: 15px;
+  font-style: normal;
+  font-weight: normal;
+}
+#main .login .box .link {
+  width: 356px;
+  margin: 0 auto;
+  height: 48px;
+  border-top: 1px solid #EDEDED;
+}
+#main .login .box .link .li1 {
+  width: 86px;
+  height: 20px;
+  border-right: 1px solid #ededed;
+  margin: 10px 0;
+  float: left;
+}
+#main .login .box .link .li1 div {
+  text-align: left;
+}
+#main .login .box .link .li1 div .s1 {
+  height: 20px;
+  display: inline-block;
+  font-size: 12px;
+  color: #515151;
+  cursor: pointer;
+}
+#main .login .box .link .li1 div .s1 i {
+  width: 20px;
+  height: 20px;
+  background: url(../img/logo-icon.jpg) no-repeat;
+  display: inline-block;
+  text-align: center;
+}
+#main .login .box .link .li1 div a {
+  color: #515151;
+  height: 26px;
+  line-height: 26px;
+  text-decoration: none;
+  padding-top: 4px;
+}
+#main .login .box .link .li1 div a:hover {
+  text-decoration: underline;
+  color: #4eab00;
+}
+#main .login .box .link .li1 div a span {
+  position: relative;
+  top: -3px;
+  height: 16px;
+  line-height: 16px;
+  padding-top: 4px;
+}
+#main .login .box .link .li2 {
+  width: 86px;
+  height: 20px;
+  border-right: 1px solid #ededed;
+  margin: 10px 0;
+  float: left;
+}
+#main .login .box .link .li2 div {
+  text-align: center;
+}
+#main .login .box .link .li2 div .s2 {
+  height: 20px;
+  display: inline-block;
+  font-size: 12px;
+  color: #515151;
+  cursor: pointer;
+}
+#main .login .box .link .li2 div .s2 i {
+  width: 20px;
+  height: 20px;
+  background: url(../img/logo-icon.jpg) no-repeat;
+  display: inline-block;
+  background-position: -21px 0;
+}
+#main .login .box .link .li2 div a {
+  color: #515151;
+  height: 26px;
+  line-height: 26px;
+  text-decoration: none;
+  padding-top: 4px;
+}
+#main .login .box .link .li2 div a:hover {
+  text-decoration: underline;
+  color: #4eab00;
+}
+#main .login .box .link .li2 div a span {
+  position: relative;
+  top: -3px;
+  height: 16px;
+  line-height: 16px;
+  padding-top: 4px;
+}
+#main .login .box .li3 {
+  width: 95px;
+  height: 20px;
+  margin: 10px 0;
+  float: left;
+}
+#main .login .box .li3 div {
+  text-align: center;
+}
+#main .login .box .li3 div .s3 {
+  height: 20px;
+  display: inline-block;
+  font-size: 12px;
+  color: #515151;
+  cursor: pointer;
+}
+#main .login .box .li3 div .s3 i {
+  width: 20px;
+  height: 20px;
+  background: url(../img/logo-icon.jpg) no-repeat;
+  background-position: -84px 0;
+  display: inline-block;
+}
+#main .login .box .li3 div a {
+  color: #515151;
+  height: 26px;
+  line-height: 26px;
+  text-decoration: none;
+  padding-top: 4px;
+}
+#main .login .box .li3 div a:hover {
+  text-decoration: underline;
+  color: #4eab00;
+}
+#main .login .box .li3 div a span {
+  position: relative;
+  top: -3px;
+  height: 16px;
+  line-height: 16px;
+  padding-top: 4px;
+}
+#main .login .box .content {
+  width: 348px;
+  padding: 39px 0 0 25px;
+}
+#main .login .box .content .errorbox {
+  height: 26px;
+  line-height: 26px;
+  margin: 6px 0;
+  display: none;
+}
+#main .login .box .content .errorbox .error {
+  background: #FDEFEC;
+  border: 1px solid #FFB6A9;
+  font-size: 12px;
+  color: #FF4422;
+}
+#main .login .box .content .errorbox .error .span1 {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: url(../img/login-icon5.png) no-repeat;
+  padding-right: 11px;
+  position: relative;
+  left: 7px;
+  top: 4px;
+}
+#main .login .box .content .errorbox .error .span2 {
+  display: inline-block;
+  line-height: 26px;
+  position: relative;
+}
+#main .login .box .content .phone {
+  border: 1px solid #BDBDBD;
+  width: 346px;
+  height: 40px;
+}
+#main .login .box .content .phone .phoneicon {
+  border-right: 1px solid #BDBDBD;
+  width: 41px;
+  height: 40px;
+  float: left;
+  background: #f0f0f0;
+}
+#main .login .box .content .phone .phoneicon .icon {
+  background: url(../img/login-icon24.png) no-repeat;
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+  position: relative;
+  top: 12px;
+}
+#main .login .box .content .phone .phoneipt {
+  width: 304px;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+}
+#main .login .box .content .phone .phoneipt input {
+  width: 250px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 8px;
+  float: left;
+  border: 0 none;
+  color: #000;
+}
+#main .login .box .content .phone .phoneipt em {
+  background: url(../img/login-icon10.png) center no-repeat;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  float: left;
+  position: relative;
+  top: 8px;
+  display: none;
+}
+#main .login .box .content .loginCode {
+  margin-top: 14px;
+  position: relative;
+  width: 346px;
+  height: 40px;
+  border: 1px solid #BDBDBD;
+}
+#main .login .box .content .loginCode .code-icon {
+  width: 41px;
+  height: 40px;
+  float: left;
+  border-right: 1px solid #BDBDBD;
+  background: #f0f0f0;
+}
+#main .login .box .content .loginCode .code-icon .icon {
+  background: url(../img/login-icon2.png) no-repeat;
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+  position: relative;
+  top: 12px;
+  display: block;
+}
+#main .login .box .content .loginCode .code-ipt {
+  width: 174px;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 8px;
+  position: relative;
+}
+#main .login .box .content .loginCode .code-ipt input {
+  width: 164px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  border: 0 none;
+  float: left;
+  font-size: 13px;
+  font-weight: inherit;
+  vertical-align: middle;
+}
+#main .login .box .content .loginCode .code-ipt .zimg {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: none;
+}
+#main .login .box .content .loginCode .code-ipt .e {
+  background: url(../img/login-icon10.png) center no-repeat;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  float: left;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: none;
+}
+#main .login .box .content .loginCode em {
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 8px 0;
+  padding: 0 15px;
+  line-height: 22px;
+  border-left: 1px solid #CDCDCD;
+  font-size: 12px;
+  color: #669901;
+  display: none;
+}
+#main .login .box .content .loginCode .huo {
+  color: #669901;
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 8px 0;
+  padding: 0 15px;
+  line-height: 22px;
+  border-left: 1px solid #CDCDCD;
+  font-size: 12px;
+}
+#main .login .box .content .loginCode .send {
+  color: #669901;
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 8px 0;
+  padding: 0 15px;
+  line-height: 22px;
+  border-left: 1px solid #CDCDCD;
+  font-size: 12px;
+  display: none;
+}
+#main .login .box .content .loginCode .over {
+  position: absolute;
+  font-size: 14px;
+  left: 5px;
+  top: 9px;
+  display: none;
+}
+#main .login .box .content .xieyi {
+  height: 18px;
+  padding-top: 44px;
+  padding-bottom: 16px;
+}
+#main .login .box .content .xieyi span {
+  font-size: 12px;
+  color: #666;
+  position: relative;
+  display: block;
+}
+#main .login .box .content .xieyi span i {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  background: url(../img/login-icon17.png) no-repeat;
+}
+#main .login .box .content .xieyi span a {
+  color: #669901;
+}
+#main .login .box .content .btn {
+  background: #8DC63F;
+  width: 348px;
+  border-radius: 4px;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+#main .login .box .content .change {
+  height: 18px;
+  padding-top: 16px;
+  padding-bottom: 21px;
+}
+#main .login .box .content .change a {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  color: #666;
+  font-size: 12px;
+  text-align: left;
+}
+
+#footer {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#footer span {
+  display: block;
+  color: #176246;
+  line-height: 26px;
+  margin: 0 auto;
+  text-align: center;
+}
+#footer span a {
+  font-size: 12px;
+  font-family: "宋体", Arial, Helvetica, sans-serif;
+  color: #666;
+  width: 48px;
+  height: 12px;
+  display: inline-block;
+  padding: 0 8px;
+}
+#footer p {
+  line-height: 26px;
+  margin: 0 auto;
+  text-align: center;
+  color: #666;
+  font-family: "宋体", Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=denglu.css.map */

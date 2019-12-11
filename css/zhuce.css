@@ -1,0 +1,341 @@
+@charset "UTF-8";
+div, td, body {
+  font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #515151;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: #515151;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+input, textarea, select, button {
+  font-family: "微软雅黑";
+  font-size: 12px;
+  font-weight: inherit;
+  vertical-align: middle;
+}
+
+input[type="hidden" i] {
+  display: none;
+  -webkit-appearance: initial;
+  background-color: initial;
+  cursor: default;
+  padding: initial;
+  border: initial;
+}
+
+input {
+  outline: none;
+}
+
+#header {
+  margin: 0 auto;
+  width: 1000px;
+}
+#header img {
+  margin: 10px 0;
+  float: left;
+}
+#header span {
+  line-height: 70px;
+  font-size: 24px;
+  padding-left: 3px;
+  margin: 10px 0;
+  float: left;
+  cursor: pointer;
+}
+
+#tabBox {
+  width: 666px;
+  margin: 0 auto;
+  padding-left: 333px;
+  height: 37px;
+  clear: both;
+  line-height: 0;
+}
+#tabBox .regper {
+  background: url(../img/tabbg.jpg) left top no-repeat;
+  font-size: 16px;
+  display: block;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  width: 163px;
+  height: 38px;
+  line-height: 38px;
+  font-family: "微软雅黑";
+  margin-right: 5px;
+}
+#tabBox .login {
+  width: 130px;
+  float: right;
+  padding-top: 14px;
+  font-size: 12px;
+  color: #565656;
+}
+#tabBox .login a {
+  color: #6e9b0c;
+  font-size: 12px;
+}
+
+#perDiv {
+  border-top: 1px solid #d6d5d5;
+  padding: 45px 0 0 40px;
+  width: 960px;
+  height: auto !important;
+  min-height: 490px;
+  background: #fff;
+  margin: 0 auto;
+}
+#perDiv ul {
+  background: url(../img/pic10.jpg) 460px 0px no-repeat;
+  display: block;
+  height: 404px;
+  width: 960px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+#perDiv ul .regMb30 {
+  margin-bottom: 30px;
+}
+#perDiv ul .regMb30 .regM {
+  width: 268px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #cdcdcd;
+  display: block;
+  float: left;
+}
+#perDiv ul .regMb30 .regM .user {
+  width: 228px;
+  height: 36px;
+  line-height: 36px;
+  border: none;
+  outline: none;
+  color: #515151;
+  padding: 0 5px;
+  display: block;
+  float: left;
+}
+#perDiv ul .regMb30 .regM .zimg1 {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 6px;
+  right: 574px;
+  display: none;
+}
+#perDiv ul .regMb30 .regM .zimg2 {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 74px;
+  right: 574px;
+  display: none;
+}
+#perDiv ul .regMb30 .regM .zimg3 {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 142px;
+  right: 574px;
+  display: none;
+}
+#perDiv ul .regMb30 .info0 {
+  line-height: 36px;
+}
+#perDiv ul .regMb30 .yanzheng {
+  float: left;
+  padding: 0 5px;
+  width: 58px;
+  height: 36px;
+  border: 1px solid #cdcdcd;
+}
+#perDiv ul .regMb30 .zimg {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 210px;
+  right: 773px;
+  display: none;
+}
+#perDiv ul .regMb30 .yanimg {
+  width: 106px;
+  height: 36px;
+  margin-left: 6px;
+  float: left;
+}
+#perDiv ul .regMb30 .yanimg img {
+  width: 106px;
+  height: 36px;
+}
+#perDiv ul .regMb30 .fix {
+  color: #565656;
+  width: 86px;
+  line-height: 36px;
+  height: 36px;
+  float: left;
+}
+#perDiv ul .regMb30 .fix a {
+  color: #6e9b0c;
+}
+#perDiv ul li {
+  height: 38px;
+}
+#perDiv ul li .regM {
+  width: 268px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #cdcdcd;
+  display: block;
+  float: left;
+}
+#perDiv ul li .regM .user {
+  width: 228px;
+  height: 36px;
+  line-height: 36px;
+  border: none;
+  outline: none;
+  color: #515151;
+  padding: 0 5px;
+  display: block;
+  float: left;
+}
+#perDiv ul li label {
+  width: 118px;
+  font-size: 14px;
+  color: #515151;
+  height: 38px;
+  line-height: 38px;
+  text-align: right;
+  display: block;
+  float: left;
+  font-family: "宋体", Arial, Helvetica, sans-serif;
+}
+#perDiv ul li label font {
+  color: #ff4800;
+  font-size: 14px;
+}
+#perDiv ul li .info {
+  display: inline-block;
+  height: 36px;
+  width: 225px;
+  background-color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+#perDiv ul li .safe {
+  margin-left: 187px;
+  height: 20px;
+  width: 200px;
+  background-color: #fff;
+  margin-top: 5px;
+  color: #666;
+  font-size: 12px;
+}
+#perDiv ul li .safe em {
+  text-align: center;
+  width: 34px;
+  margin-right: 2px;
+  color: #fff;
+  background: #c4c4c4;
+  display: inline-block;
+}
+#perDiv ul .regPl88 {
+  padding-left: 88px;
+}
+#perDiv ul .regPl88 span {
+  margin-left: 29px;
+  width: 268px;
+  height: 36px;
+  line-height: 36px;
+}
+#perDiv ul .regPl88 span a {
+  color: #565656;
+}
+#perDiv ul .last {
+  margin-left: 29px;
+  height: 38px;
+  margin-top: 10px;
+  padding-left: 88px;
+}
+#perDiv ul .last a {
+  display: block;
+  float: left;
+  width: 271px;
+  height: 38px;
+  background: url(https://passport.sfbest.com/images/reg_btn.jpg) left top no-repeat;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  margin-right: 20px;
+  line-height: 38px;
+}
+#perDiv ul .last a:hover {
+  background-position: 0 -38px;
+}
+#perDiv .ui-reg-tip {
+  padding: 15px 10px 10px 45px;
+  border-top: 1px dotted #dcdcdc;
+  position: relative;
+  left: -30px;
+  width: 930px;
+  background: url(https://passport.sfbest.com/images/reg_tip.png) no-repeat 25px 16px;
+}
+#perDiv .ui-reg-tip a {
+  color: #669900;
+}
+
+#footer {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#footer span {
+  display: block;
+  color: #176246;
+  line-height: 26px;
+  margin: 0 auto;
+  text-align: center;
+}
+#footer span a {
+  font-size: 12px;
+  font-family: "宋体", Arial, Helvetica, sans-serif;
+  color: #666;
+  width: 48px;
+  height: 12px;
+  display: inline-block;
+  padding: 0 8px;
+}
+#footer p {
+  line-height: 26px;
+  margin: 0 auto;
+  text-align: center;
+  color: #666;
+  font-family: "宋体", Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=zhuce.css.map */
