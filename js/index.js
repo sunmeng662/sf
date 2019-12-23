@@ -313,4 +313,23 @@ $(()=>{
                 t=0;
             }
         },2000)
+        // 获取用户名
+        $(()=>{
+            let u = localStorage.getItem('user');
+            if(u){
+                $('.login .dl').hide();
+                $('.user span').show();
+                $('.user span').html(u);
+                $('.newregbox').hide();
+                $('.out').show();
+            }else{
+                $('.login .dl').show();
+                $('.user').hide();
+                $('.newregbox').show();
+                $('.out').hide();
+            }
+        })
+        $('.out').click(()=>{
+            localStorage.removeItem('user')
+        })
 })

@@ -228,7 +228,7 @@ zhuce.addEventListener('click',function(){
             }else{
                 zhuce.innerHTML = '注册成功，请稍后...'
                 setTimeout(()=>{
-                    window.location.href = '../html/denglu.html';
+                    window.location.href = '../html/login.html';
                 },1000)
             }
         })

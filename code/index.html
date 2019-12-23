@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<style>
+			.left {
+				height: 150px;
+			}
+			.right {
+				height: 150px;
+			}
+			.title:hover {
+				font-weight: bolder;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<!--注释-->
+			<ul class="nav nav-pills">
+			  <li role="presentation" class="active"><a href="#" id="default_sort">默认排序</a></li>
+			  <li role="presentation"><a href="#" id="rise_price_sort">价格升序</a></li>
+			  <li role="presentation"><a href="#" id="declien_price_sort">价格降序</a></li>
+			  <li role="presentation"><a href="#" id="rise_date_sort">日期升序</a></li>
+			  <li role="presentation"><a href="#" id="declien_date_sort">日期降序</a></li>
+			</ul>
+			
+			
+			
+			<!--内容 -->
+			
+			<div class="row" id="content">
+				
+				<!--<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-5 left">
+							<img src="imgs/20039611-1_l_9.jpg" alt="" class="img-responsive center-block" />
+						</div>
+						
+						<div class="col-md-7 right">
+							<h2>人生海海</h2>
+							<p>麦家</p>
+							<p>2019-12-08</p>
+							<p>21.80</p>
+						</div>
+					</div>
+				</div>-->
+
+			</div>
+			
+			
+		</div>
+	</body>
+	<script src="jq.js"></script>
+	<script src="lib.js"></script>
+	<script>
+		
+		
+		async function getData() {
+			var msg = await $.get('goods.json');
+			return msg;
+		}
+		
+		var p = getData();
+		
+		
+		// 默认排序 
+		$('#default_sort').click(function() {
+			p.then(msg=> {
+//				console.log(msg)
+				// 调用方法 
+				var val = HandleData.showData(msg);
+//				console.log(val)
+				$('#content').html(val);
+			})
+		})
+		// 手动调用一下事件
+		$("#default_sort").click();
+		
+		
+		$("#rise_price_sort").click(function() {
+			p.then(msg=> {
+				var data = HandleData.priceSort(msg,true)
+//				console.log(data)
+				var val = HandleData.showData(data);
+				$('#content').html(val);
+			})
+		})
+		
+		$("#declien_price_sort").click(function() {
+			p.then(msg=> {
+				var data = HandleData.priceSort(msg,false)
+//				console.log(data)
+				var val = HandleData.showData(data);
+				$('#content').html(val);
+			})
+		})
+		
+		$("#rise_date_sort").click(function() {
+			p.then(msg=> {
+//				HandleData.dateSort(msg,false)
+				var data = HandleData.dateSort(msg,true)
+//				console.log(data)
+				var val = HandleData.showData(data);
+				$('#content').html(val);
+			})
+		})
+		
+		$("#declien_date_sort").click(function() {
+			p.then(msg=> {
+//				HandleData.dateSort(msg,false)
+				var data = HandleData.dateSort(msg,false)
+//				console.log(data)
+				var val = HandleData.showData(data);
+				$('#content').html(val);
+			})
+		})
+		
+		
+		// 给title绑定单击事件 
+//		$('.title').click(function() {
+//			console.log(111)
+//		})
+
+//		console.log($('.title'))
+
+		$("#content").click(function(e) {
+//			console.log(111)
+//			console.log(e.target)
+			if(e.target.className === "title") {
+//				location.href = "http://www.baidu.com"
+				var location_url = encodeURI(`details.html?goods_id=${$(e.target).attr('data-goods-id')}`);
+//				console.log(location_url)
+				location.href = location_url;
+			}
+		})
+	</script>
+</html>

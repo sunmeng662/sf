@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>详情页</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<style>
+			.left {
+				height: 150px;
+			}
+			.right {
+				height: 150px;
+			}
+			.title:hover {
+				font-weight: bolder;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="content">
+				
+			</div>
+		</div>
+	</body>
+	<script src="jq.js"></script>
+	<script src="lib.js"></script>
+	<script>
+		$(()=> {
+			// decodeURI url解码 
+			var href = decodeURI(window.location.href);
+//			console.log(href)
+			// 通过字符串截取获取商品id
+			var data = href.split("=")
+			var goods_id = data[1]
+//			console.log(data)
+			
+			
+			// 获取全部的数据
+			async function getData() {
+				var msg = await $.get('goods.json');
+				return msg;
+			}
+			
+			var p = getData();
+			p.then(msg=> {
+				var info = HandleData.getIdData(goods_id,msg);
+				$('#content').html(info);
+			})
+			
+			
+			$('#content').click(function(e){
+				
+				
+				// 获取需要的数据 
+				var main = $(e.target).parent().parent();
+//				console.log(main)
+
+				// 获取商品价格 
+//				console.log(main.children().find("#price").text())
+				var price = parseFloat(main.children().find("#price").text())
+//				console.log(price)
+				// 获取库存 
+				var stock = main.children().find("#stock");
+				
+				// 获取购买数量
+				var num = main.children().find('#num');
+				// 获取总价 
+				var total_price = main.children().find('#total');
+				
+				// 判断用户点击的事件源 
+				if(e.target.className === "add") {
+					// 判断库存
+					if(Number(stock.text()) === 0) {
+						alert('库存不足');
+						stock.text(0);
+					}else {
+						// 库存足够 
+						var new_stock = Number(stock.text()) - 1;
+						stock.text(new_stock);
+						
+						// 将购买数量+1 
+						num.text(Number(num.text()) +1)
+ 					}
+					
+					total_price.text((Number(num.text()) * price).toFixed(2));
+					
+					// 向购物车传递的数据 
+					HandleData.payPrice(goods_id,price,Number(num.text()))
+				}else if(e.target.className === "del") {
+					// 减少操作 
+					if(Number(num.text()) === 0) {
+						alert("不能再少了，购买数量已经为0了");
+					}else {
+						// 减少购买数量 
+						num.text(Number(num.text()) - 1);
+						// 将库存增加 
+						stock.text(Number(stock.text()) + 1);
+						// 更改价格 
+						total_price.text((Number(total_price.text()) - price).toFixed(2));
+					}
+					
+					HandleData.payPrice(goods_id,price,Number(num.text()))
+				}
+				
+			})
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		})
+	</script>
+</html>

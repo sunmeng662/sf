@@ -200,14 +200,14 @@ $(function(){
                         $('.errorbox .span2').text('此手机号还未注册');
                         $('.btn').text('前往注册...')
                         setInterval(()=>{
-                            window.location.href = 'zhuce.html'
+                            window.location.href = 'register.html'
                         },2000)
                     }else{
                         // 存储用户信息
                         localStorage.setItem('user',user)
                         $('.btn').text('登录中...')
                         setInterval(()=>{
-                            window.location.href = 'shouye.html'
+                            window.location.href = 'index.html'
                         },2000)
                     }
                 })
